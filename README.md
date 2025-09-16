@@ -9,7 +9,7 @@ Percebi que a taxa de aprendizagem faz muita diferença. Quando usei um valor mu
 Fiz a mesma coisa com o número de épocas. Com poucas épocas (só 10), o Perceptron não teve tempo suficiente para aprender. Com as 100 épocas do exemplo, ele aprendeu a função perfeitamente. Testei com um número bem mais elevado de épocas (5000), mas não mudou o resultado final, só demorou mais, o que mostra que ele já tinha chegado na melhor solução.
 
 ## 3. Simulando a Porta Lógica AND
-Para fazer o teste com a porta AND, a única coisa que precisei mudar foi a lista de saídas esperadas para `[[0], [0], [0], [1]]`. O Perceptron conseguiu aprender a função AND sem problemas, porque ela também é "linearmente separável", assim como a porta OR.
+Para fazer o teste com a porta AND, a única coisa que precisei mudar foi a lista de saídas esperadas para [[0], [0], [0], [1]]. O Perceptron conseguiu aprender a função AND sem problemas, porque ela também é "linearmente separável", assim como a porta OR.
 
 ## 4. Melhorando o Código
 Uma das mudanças que fiz foi extrair a função de ativação para um método separado. Antes, a mesma lógica estava repetida em dois lugares diferentes. Separar a função deixou o código mais organizado e facilitou muito na hora de fazer o próximo passo, que era trocar de função.
